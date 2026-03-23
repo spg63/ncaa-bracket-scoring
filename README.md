@@ -1,5 +1,7 @@
 # NCAA Bracket Scorer
 
+NOTE: Vibe-coded with Claude
+
 Family bracket pool scorer with traditional + custom seed-weighted scoring.
 
 ---

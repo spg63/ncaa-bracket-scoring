@@ -1,0 +1,19 @@
+# Build outputs
+build/
+app/build/
+*.hprof
+
+# Android local config
+local.properties
+
+# Keystore — never commit this
+*.jks
+*.keystore
+
+# Gradle caches
+.gradle/
+.idea/
+
+# CLI bracket data (desktop)
+brackets/
+.cache/

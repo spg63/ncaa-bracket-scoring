@@ -24,6 +24,7 @@ data class AppState(
     val scores: List<PlayerScore> = emptyList(),
     val isLoading: Boolean = false,
     val error: String? = null,
+    val successMessage: String? = null,
     val scoringMode: ScoringMode = ScoringMode.TRADITIONAL
 )
 
@@ -35,35 +36,29 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     val state = _state.asStateFlow()
 
     init {
-        loadInitialData()
-    }
-
-    private fun loadInitialData() {
-        viewModelScope.launch {
-            val structure = withContext(Dispatchers.IO) { Storage.loadCachedTournamentStructure(ctx) }
-            val brackets  = withContext(Dispatchers.IO) { Storage.loadAllBrackets(ctx) }
-            val scores    = if (structure != null) Scorer.scoreAll(brackets, structure) else emptyList()
-            _state.update { it.copy(structure = structure, brackets = brackets, scores = scores) }
-        }
+        refresh()
     }
 
     fun refresh() {
         viewModelScope.launch {
-            _state.update { it.copy(isLoading = true, error = null) }
+            _state.update { it.copy(isLoading = true, error = null, successMessage = null) }
             val fetched = ResultsFetcher.fetchTournamentStructure()
             if (fetched != null) {
                 withContext(Dispatchers.IO) { Storage.saveTournamentStructure(ctx, fetched) }
             }
-            val structure = fetched ?: _state.value.structure
+            val structure = fetched
+                ?: withContext(Dispatchers.IO) { Storage.loadCachedTournamentStructure(ctx) }
+                ?: _state.value.structure
             val brackets  = withContext(Dispatchers.IO) { Storage.loadAllBrackets(ctx) }
             val scores    = if (structure != null) Scorer.scoreAll(brackets, structure) else emptyList()
             _state.update {
                 it.copy(
-                    isLoading = false,
-                    structure = structure,
-                    brackets  = brackets,
-                    scores    = scores,
-                    error     = if (fetched == null) "Could not fetch data. Using cached results." else null
+                    isLoading      = false,
+                    structure      = structure,
+                    brackets       = brackets,
+                    scores         = scores,
+                    error          = if (fetched == null) "Could not fetch data. Using cached results." else null,
+                    successMessage = if (fetched != null) "Scores updated." else null
                 )
             }
         }
@@ -86,4 +81,5 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     fun clearError() = _state.update { it.copy(error = null) }
+    fun clearSuccessMessage() = _state.update { it.copy(successMessage = null) }
 }

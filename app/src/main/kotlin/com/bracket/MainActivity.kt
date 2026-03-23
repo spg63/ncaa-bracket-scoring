@@ -6,9 +6,10 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.List
 import androidx.compose.material.icons.filled.Edit
-import androidx.compose.material.icons.filled.List
-import androidx.compose.material.icons.filled.Star
+import androidx.compose.material.icons.filled.EmojiEvents
+import androidx.compose.material.icons.filled.Person
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
@@ -35,9 +36,9 @@ class MainActivity : ComponentActivity() {
 }
 
 private enum class Tab(val label: String, val icon: ImageVector) {
-    LEADERBOARD("Leaderboard", Icons.Default.Star),
+    LEADERBOARD("Leaderboard", Icons.Default.EmojiEvents),
     ENTER("Bracket",   Icons.Default.Edit),
-    PICKS("Picks",     Icons.Default.List)
+    PICKS("Picks",     Icons.Default.Person)
 }
 
 @Composable
@@ -66,11 +67,12 @@ private fun BracketApp() {
 
         when (selectedTab) {
             Tab.LEADERBOARD -> LeaderboardScreen(
-                state           = state,
-                onRefresh       = { mainVm.refresh() },
-                onSetScoringMode = { mainVm.setScoringMode(it) },
-                onClearError    = { mainVm.clearError() },
-                modifier        = Modifier.padding(innerPadding)
+                state                 = state,
+                onRefresh             = { mainVm.refresh() },
+                onSetScoringMode      = { mainVm.setScoringMode(it) },
+                onClearError          = { mainVm.clearError() },
+                onClearSuccessMessage = { mainVm.clearSuccessMessage() },
+                modifier              = Modifier.padding(innerPadding)
             )
             Tab.ENTER -> BracketEntryScreen(
                 structure       = state.structure,

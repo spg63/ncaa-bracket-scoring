@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">NCAA Bracket Scorer</string>
+    <string name="widget_small_description">Top 3 bracket standings</string>
+    <string name="widget_large_description">Full bracket standings</string>
 </resources>

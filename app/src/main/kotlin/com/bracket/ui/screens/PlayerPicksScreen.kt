@@ -161,14 +161,11 @@ private fun PickRow(pick: PlayerPick, isComplete: Boolean, winnerName: String?) 
                 }
             }
             Spacer(Modifier.width(10.dp))
-            Column(modifier = Modifier.weight(1f)) {
-                Text(pick.pickedTeamName, style = MaterialTheme.typography.bodyMedium)
-                Text(
-                    pick.gameId,
-                    style = MaterialTheme.typography.labelSmall,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
-                )
-            }
+            Text(
+                pick.pickedTeamName,
+                style = MaterialTheme.typography.bodyMedium,
+                modifier = Modifier.weight(1f)
+            )
             ResultBadge(isComplete = isComplete, isCorrect = isCorrect, winnerName = winnerName)
         }
     }

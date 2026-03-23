@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.CloudDownload
 import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -28,6 +29,7 @@ fun LeaderboardScreen(
     onRefresh: () -> Unit,
     onSetScoringMode: (ScoringMode) -> Unit,
     onClearError: () -> Unit,
+    onClearSuccessMessage: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val snackbarHostState = remember { SnackbarHostState() }
@@ -36,6 +38,13 @@ fun LeaderboardScreen(
         if (state.error != null) {
             snackbarHostState.showSnackbar(state.error)
             onClearError()
+        }
+    }
+
+    LaunchedEffect(state.successMessage) {
+        if (state.successMessage != null) {
+            snackbarHostState.showSnackbar(state.successMessage)
+            onClearSuccessMessage()
         }
     }
 
@@ -95,9 +104,30 @@ fun LeaderboardScreen(
 
             if (state.structure == null && !state.isLoading) {
                 Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                        Text("No tournament data loaded.", style = MaterialTheme.typography.bodyLarge)
-                        Spacer(Modifier.height(8.dp))
+                    Column(
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                        modifier = Modifier.padding(32.dp)
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.CloudDownload,
+                            contentDescription = null,
+                            modifier = Modifier.size(64.dp),
+                            tint = MaterialTheme.colorScheme.primary.copy(alpha = 0.4f)
+                        )
+                        Spacer(Modifier.height(16.dp))
+                        Text(
+                            "No tournament data",
+                            style = MaterialTheme.typography.titleMedium,
+                            fontWeight = FontWeight.SemiBold
+                        )
+                        Spacer(Modifier.height(4.dp))
+                        Text(
+                            "Fetch the latest bracket from ESPN to get started.",
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            textAlign = TextAlign.Center
+                        )
+                        Spacer(Modifier.height(24.dp))
                         Button(onClick = onRefresh) { Text("Fetch Data") }
                     }
                 }

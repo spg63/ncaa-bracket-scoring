@@ -1,0 +1,385 @@
+{
+    "playerName": "Chelsey",
+    "year": 2026,
+    "picks": [
+        {
+            "gameId": "SOUTH_R64_G1",
+            "round": "ROUND_64",
+            "pickedTeamName": "Florida Gators",
+            "pickedSeed": 1
+        },
+        {
+            "gameId": "SOUTH_R64_G2",
+            "round": "ROUND_64",
+            "pickedTeamName": "Clemson Tigers",
+            "pickedSeed": 8
+        },
+        {
+            "gameId": "SOUTH_R64_G3",
+            "round": "ROUND_64",
+            "pickedTeamName": "Vanderbilt Commodores",
+            "pickedSeed": 5
+        },
+        {
+            "gameId": "SOUTH_R64_G4",
+            "round": "ROUND_64",
+            "pickedTeamName": "Nebraska Cornhuskers",
+            "pickedSeed": 4
+        },
+        {
+            "gameId": "SOUTH_R64_G5",
+            "round": "ROUND_64",
+            "pickedTeamName": "VCU Rams",
+            "pickedSeed": 11
+        },
+        {
+            "gameId": "SOUTH_R64_G6",
+            "round": "ROUND_64",
+            "pickedTeamName": "Illinois Fighting Illini",
+            "pickedSeed": 3
+        },
+        {
+            "gameId": "SOUTH_R64_G7",
+            "round": "ROUND_64",
+            "pickedTeamName": "Saint Mary's Gaels",
+            "pickedSeed": 7
+        },
+        {
+            "gameId": "SOUTH_R64_G8",
+            "round": "ROUND_64",
+            "pickedTeamName": "Houston Cougars",
+            "pickedSeed": 2
+        },
+        {
+            "gameId": "EAST_R64_G1",
+            "round": "ROUND_64",
+            "pickedTeamName": "Duke Blue Devils",
+            "pickedSeed": 1
+        },
+        {
+            "gameId": "EAST_R64_G2",
+            "round": "ROUND_64",
+            "pickedTeamName": "TCU Horned Frogs",
+            "pickedSeed": 9
+        },
+        {
+            "gameId": "EAST_R64_G3",
+            "round": "ROUND_64",
+            "pickedTeamName": "St. John's Red Storm",
+            "pickedSeed": 5
+        },
+        {
+            "gameId": "EAST_R64_G4",
+            "round": "ROUND_64",
+            "pickedTeamName": "Kansas Jayhawks",
+            "pickedSeed": 4
+        },
+        {
+            "gameId": "EAST_R64_G5",
+            "round": "ROUND_64",
+            "pickedTeamName": "Louisville Cardinals",
+            "pickedSeed": 6
+        },
+        {
+            "gameId": "EAST_R64_G6",
+            "round": "ROUND_64",
+            "pickedTeamName": "Michigan State Spartans",
+            "pickedSeed": 3
+        },
+        {
+            "gameId": "EAST_R64_G7",
+            "round": "ROUND_64",
+            "pickedTeamName": "UCLA Bruins",
+            "pickedSeed": 7
+        },
+        {
+            "gameId": "EAST_R64_G8",
+            "round": "ROUND_64",
+            "pickedTeamName": "UConn Huskies",
+            "pickedSeed": 2
+        },
+        {
+            "gameId": "MIDWEST_R64_G1",
+            "round": "ROUND_64",
+            "pickedTeamName": "Michigan Wolverines",
+            "pickedSeed": 1
+        },
+        {
+            "gameId": "MIDWEST_R64_G2",
+            "round": "ROUND_64",
+            "pickedTeamName": "Georgia Bulldogs",
+            "pickedSeed": 8
+        },
+        {
+            "gameId": "MIDWEST_R64_G3",
+            "round": "ROUND_64",
+            "pickedTeamName": "Akron Zips",
+            "pickedSeed": 12
+        },
+        {
+            "gameId": "MIDWEST_R64_G4",
+            "round": "ROUND_64",
+            "pickedTeamName": "Alabama Crimson Tide",
+            "pickedSeed": 4
+        },
+        {
+            "gameId": "MIDWEST_R64_G5",
+            "round": "ROUND_64",
+            "pickedTeamName": "Tennessee Volunteers",
+            "pickedSeed": 6
+        },
+        {
+            "gameId": "MIDWEST_R64_G6",
+            "round": "ROUND_64",
+            "pickedTeamName": "Virginia Cavaliers",
+            "pickedSeed": 3
+        },
+        {
+            "gameId": "MIDWEST_R64_G7",
+            "round": "ROUND_64",
+            "pickedTeamName": "Kentucky Wildcats",
+            "pickedSeed": 7
+        },
+        {
+            "gameId": "MIDWEST_R64_G8",
+            "round": "ROUND_64",
+            "pickedTeamName": "Iowa State Cyclones",
+            "pickedSeed": 2
+        },
+        {
+            "gameId": "WEST_R64_G1",
+            "round": "ROUND_64",
+            "pickedTeamName": "Arizona Wildcats",
+            "pickedSeed": 1
+        },
+        {
+            "gameId": "WEST_R64_G2",
+            "round": "ROUND_64",
+            "pickedTeamName": "Utah State Aggies",
+            "pickedSeed": 9
+        },
+        {
+            "gameId": "WEST_R64_G3",
+            "round": "ROUND_64",
+            "pickedTeamName": "Wisconsin Badgers",
+            "pickedSeed": 5
+        },
+        {
+            "gameId": "WEST_R64_G4",
+            "round": "ROUND_64",
+            "pickedTeamName": "Arkansas Razorbacks",
+            "pickedSeed": 4
+        },
+        {
+            "gameId": "WEST_R64_G5",
+            "round": "ROUND_64",
+            "pickedTeamName": "Texas Longhorns",
+            "pickedSeed": 11
+        },
+        {
+            "gameId": "WEST_R64_G6",
+            "round": "ROUND_64",
+            "pickedTeamName": "Gonzaga Bulldogs",
+            "pickedSeed": 3
+        },
+        {
+            "gameId": "WEST_R64_G7",
+            "round": "ROUND_64",
+            "pickedTeamName": "Miami Hurricanes",
+            "pickedSeed": 7
+        },
+        {
+            "gameId": "WEST_R64_G8",
+            "round": "ROUND_64",
+            "pickedTeamName": "Purdue Boilermakers",
+            "pickedSeed": 2
+        },
+        {
+            "gameId": "SOUTH_R32_G1",
+            "round": "ROUND_32",
+            "pickedTeamName": "Florida Gators",
+            "pickedSeed": 1
+        },
+        {
+            "gameId": "SOUTH_R32_G2",
+            "round": "ROUND_32",
+            "pickedTeamName": "Vanderbilt Commodores",
+            "pickedSeed": 5
+        },
+        {
+            "gameId": "SOUTH_R32_G3",
+            "round": "ROUND_32",
+            "pickedTeamName": "Illinois Fighting Illini",
+            "pickedSeed": 3
+        },
+        {
+            "gameId": "SOUTH_R32_G4",
+            "round": "ROUND_32",
+            "pickedTeamName": "Saint Mary's Gaels",
+            "pickedSeed": 7
+        },
+        {
+            "gameId": "EAST_R32_G1",
+            "round": "ROUND_32",
+            "pickedTeamName": "Duke Blue Devils",
+            "pickedSeed": 1
+        },
+        {
+            "gameId": "EAST_R32_G2",
+            "round": "ROUND_32",
+            "pickedTeamName": "Kansas Jayhawks",
+            "pickedSeed": 4
+        },
+        {
+            "gameId": "EAST_R32_G3",
+            "round": "ROUND_32",
+            "pickedTeamName": "Michigan State Spartans",
+            "pickedSeed": 3
+        },
+        {
+            "gameId": "EAST_R32_G4",
+            "round": "ROUND_32",
+            "pickedTeamName": "UCLA Bruins",
+            "pickedSeed": 7
+        },
+        {
+            "gameId": "MIDWEST_R32_G1",
+            "round": "ROUND_32",
+            "pickedTeamName": "Michigan Wolverines",
+            "pickedSeed": 1
+        },
+        {
+            "gameId": "MIDWEST_R32_G2",
+            "round": "ROUND_32",
+            "pickedTeamName": "Alabama Crimson Tide",
+            "pickedSeed": 4
+        },
+        {
+            "gameId": "MIDWEST_R32_G3",
+            "round": "ROUND_32",
+            "pickedTeamName": "Virginia Cavaliers",
+            "pickedSeed": 3
+        },
+        {
+            "gameId": "MIDWEST_R32_G4",
+            "round": "ROUND_32",
+            "pickedTeamName": "Kentucky Wildcats",
+            "pickedSeed": 7
+        },
+        {
+            "gameId": "WEST_R32_G1",
+            "round": "ROUND_32",
+            "pickedTeamName": "Arizona Wildcats",
+            "pickedSeed": 1
+        },
+        {
+            "gameId": "WEST_R32_G2",
+            "round": "ROUND_32",
+            "pickedTeamName": "Arkansas Razorbacks",
+            "pickedSeed": 4
+        },
+        {
+            "gameId": "WEST_R32_G3",
+            "round": "ROUND_32",
+            "pickedTeamName": "Gonzaga Bulldogs",
+            "pickedSeed": 3
+        },
+        {
+            "gameId": "WEST_R32_G4",
+            "round": "ROUND_32",
+            "pickedTeamName": "Purdue Boilermakers",
+            "pickedSeed": 2
+        },
+        {
+            "gameId": "SOUTH_S16_G1",
+            "round": "SWEET_16",
+            "pickedTeamName": "Vanderbilt Commodores",
+            "pickedSeed": 5
+        },
+        {
+            "gameId": "SOUTH_S16_G2",
+            "round": "SWEET_16",
+            "pickedTeamName": "Saint Mary's Gaels",
+            "pickedSeed": 7
+        },
+        {
+            "gameId": "EAST_S16_G1",
+            "round": "SWEET_16",
+            "pickedTeamName": "Duke Blue Devils",
+            "pickedSeed": 1
+        },
+        {
+            "gameId": "EAST_S16_G2",
+            "round": "SWEET_16",
+            "pickedTeamName": "UCLA Bruins",
+            "pickedSeed": 7
+        },
+        {
+            "gameId": "MIDWEST_S16_G1",
+            "round": "SWEET_16",
+            "pickedTeamName": "Michigan Wolverines",
+            "pickedSeed": 1
+        },
+        {
+            "gameId": "MIDWEST_S16_G2",
+            "round": "SWEET_16",
+            "pickedTeamName": "Virginia Cavaliers",
+            "pickedSeed": 3
+        },
+        {
+            "gameId": "WEST_S16_G1",
+            "round": "SWEET_16",
+            "pickedTeamName": "Arizona Wildcats",
+            "pickedSeed": 1
+        },
+        {
+            "gameId": "WEST_S16_G2",
+            "round": "SWEET_16",
+            "pickedTeamName": "Purdue Boilermakers",
+            "pickedSeed": 2
+        },
+        {
+            "gameId": "SOUTH_E8_G1",
+            "round": "ELITE_8",
+            "pickedTeamName": "Vanderbilt Commodores",
+            "pickedSeed": 5
+        },
+        {
+            "gameId": "EAST_E8_G1",
+            "round": "ELITE_8",
+            "pickedTeamName": "UCLA Bruins",
+            "pickedSeed": 7
+        },
+        {
+            "gameId": "MIDWEST_E8_G1",
+            "round": "ELITE_8",
+            "pickedTeamName": "Michigan Wolverines",
+            "pickedSeed": 1
+        },
+        {
+            "gameId": "WEST_E8_G1",
+            "round": "ELITE_8",
+            "pickedTeamName": "Purdue Boilermakers",
+            "pickedSeed": 2
+        },
+        {
+            "gameId": "FF_G1",
+            "round": "FINAL_FOUR",
+            "pickedTeamName": "UCLA Bruins",
+            "pickedSeed": 7
+        },
+        {
+            "gameId": "FF_G2",
+            "round": "FINAL_FOUR",
+            "pickedTeamName": "Michigan Wolverines",
+            "pickedSeed": 1
+        },
+        {
+            "gameId": "CHAMP",
+            "round": "CHAMPIONSHIP",
+            "pickedTeamName": "UCLA Bruins",
+            "pickedSeed": 7
+        }
+    ],
+    "enteredAt": "2026-03-22T10:42:38.227386"
+}
